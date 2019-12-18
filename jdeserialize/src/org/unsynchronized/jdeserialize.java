@@ -819,7 +819,7 @@ public class jdeserialize {
 
             short magic = dis.readShort();
             if(magic != ObjectStreamConstants.STREAM_MAGIC) {
-                throw new ValidityException("file magic mismatch!  expected " + ObjectStreamConstants.STREAM_MAGIC + ", got " + magic);
+                throw new ValidityException("file magic mismatch!  expected " + Integer.toHexString(ObjectStreamConstants.STREAM_MAGIC) + ", got " + Integer.toHexString(magic));
             }
             short streamversion = dis.readShort();
             if(streamversion != ObjectStreamConstants.STREAM_VERSION) {

@@ -1,4 +1,6 @@
+
 <project name="jdeserialize" default="default" basedir=".">
+    <javac srcdir="src" destdir="bin" />
     <property name="build.dir" value="build" />
     <property name="src.dir" value="src" />
     <property name="javadoc.dir" value="javadoc" />
